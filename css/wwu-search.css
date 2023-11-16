@@ -1,0 +1,89 @@
+.gsc-control-cse,
+.gsc-input-box,
+.gsc-results,
+.gsc-webResult.gsc-result,
+.gsc-results .gsc-imageResult,
+.gs-webResult:not(.gs-no-results-result):not(.gs-error-result) .gs-snippet,
+.gs-fileFormatType,
+.gcsc-find-more-on-google,
+.gsc-result-info,
+.gsc-orderby-label {
+    background-color: unset !important;
+    color: unset !important;
+    border: none !important;
+}
+
+.gs-webResult.gs-result a.gs-title:link,
+.gs-webResult.gs-result a.gs-title:link b,
+.gs-imageResult a.gs-title:link,
+.gs-imageResult a.gs-title:link b {
+    color: var(--link-color) !important;
+}
+
+.gs-webResult.gs-result a:hover.gs-title:link,
+.gs-webResult.gs-result a:hover.gs-title:link b,
+.gs-imageResult a:hover.gs-title:link,
+.gs-imageResult a:hover.gs-title:link b,
+.gs-webResult.gs-result a:active.gs-title:link,
+.gs-webResult.gs-result a:active.gs-title:link b,
+.gs-imageResult a:active.gs-title:link,
+.gs-imageResult a:active.gs-title:link b,
+.gs-webResult.gs-result a:focus.gs-title:link,
+.gs-webResult.gs-result a:focus.gs-title:link b,
+.gs-imageResult a:focus.gs-title:link,
+.gs-imageResult a:focus.gs-title:link b {
+    color: var(--link-color--hover) !important;
+}
+
+.gsc-control-cse .gs-spelling,
+.gsc-control-cse .gs-result .gs-title,
+.gsc-control-cse .gs-result .gs-title *,
+.gsc-control-cse,
+.gsc-control-cse .gsc-table-result {
+    font-size: unset !important;
+}
+
+.gsc-option-menu-container {
+    word-wrap: normal;
+}
+
+table td,
+table th,
+table tr {
+    border: none !important;
+}
+
+input.gsc-input {
+    background-color: unset !important;
+    color: unset !important;
+    border: solid var(--border-width--md) var(--input-border-color) !important;
+    padding: var(--space--xs) !important;
+}
+
+button.gsc-search-button-v2 {
+    margin: 0;
+    padding: var(--space--sm) var(--space--lg);
+}
+
+
+.gsc-results .gsc-cursor-box {
+    margin: var(--space--lg) !important;
+}
+
+.gsc-results .gsc-cursor-box .gsc-cursor-current-page {
+    background: transparent !important;
+    color: var(--default-text-color) !important;
+    border: solid var(--border-width--md) var(--link-decoration-color);
+    padding: var(--space--xs) var(--space--sm);
+}
+
+.gsc-results .gsc-cursor-box .gsc-cursor-page {
+    background: transparent;
+    color: var(--default-text-color) !imporant;
+    padding: var(--space--xs) var(--space--sm) !important;
+}
+
+.gsc-results .gsc-cursor-box .gsc-cursor-page:hover {
+    background: var(--link-background--focus) !important;
+    color: var(--link-color--hover) !important;
+}
