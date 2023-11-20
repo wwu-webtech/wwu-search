@@ -7,7 +7,8 @@
 .gs-fileFormatType,
 .gcsc-find-more-on-google,
 .gsc-result-info,
-.gsc-orderby-label {
+.gsc-orderby-label,
+.gsst_a .gscb_a {
     background-color: unset !important;
     color: unset !important;
     border: none !important;
@@ -61,8 +62,8 @@ table tr {
     border: none !important;
 }
 
-input.gsc-input {
-    background-color: unset !important;
+input.gsc-input {    
+    background: unset !important;
     color: unset !important;
     border: solid var(--border-width--md) var(--input-border-color) !important;
     padding: var(--space--xs) !important;
