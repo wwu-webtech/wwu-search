@@ -8,5 +8,5 @@ pipelines:
           - pipe: microsoft/azure-static-web-apps-deploy:main
             variables:
                 APP_LOCATION: '$BITBUCKET_CLONE_DIR/'
-                OUTPUT_LOCATION: '$$BITBUCKET_CLONE_DIR/'
+                OUTPUT_LOCATION: '$BITBUCKET_CLONE_DIR/'
                 API_TOKEN: $deployment_token
