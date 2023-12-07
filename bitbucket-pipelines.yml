@@ -1,0 +1,12 @@
+pipelines:
+  branches:
+   main:
+    - step: 
+        name: Deploy to production
+        deployment: production
+        script:
+          - pipe: microsoft/azure-static-web-apps-deploy:main
+            variables:
+                APP_LOCATION: '/'
+                OUTPUT_LOCATION: '$/'
+                API_TOKEN: $deployment_token
