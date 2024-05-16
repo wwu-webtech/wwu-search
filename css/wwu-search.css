@@ -17,14 +17,18 @@
 .gs-webResult.gs-result a.gs-title,
 .gs-webResult.gs-result a.gs-title b,
 .gs-imageResult a.gs-title,
-.gs-imageResult a.gs-title b {
+.gs-imageResult a.gs-title b,
+.gs-promotion a.gs-title,
+.gs-promotion a.gs-title b {
     color: var(--link-color) !important;
 }
 
 .gs-webResult.gs-result a.gs-title:visited,
 .gs-webResult.gs-result a.gs-title:visited b,
 .gs-imageResult a.gs-title:visited,
-.gs-imageResult a.gs-title:visited b {
+.gs-imageResult a.gs-title:visited b,
+.gs-promotion a.gs-title:visited,
+.gs-promotion a.gs-title:visited b {
     color: var(--link-color--visited) !important;
 }
 
@@ -32,15 +36,43 @@
 .gs-webResult.gs-result a:hover.gs-title b,
 .gs-imageResult a:hover.gs-title,
 .gs-imageResult a:hover.gs-title b,
+.gs-promotion a:hover.gs-title,
+.gs-promotion a:hover.gs-title b,
 .gs-webResult.gs-result a:active.gs-title,
 .gs-webResult.gs-result a:active.gs-title b,
 .gs-imageResult a:active.gs-title,
 .gs-imageResult a:active.gs-title b,
+.gs-promotion a:active.gs-title,
+.gs-promotion a:active.gs-title b,
 .gs-webResult.gs-result a:focus.gs-title,
 .gs-webResult.gs-result a:focus.gs-title b,
 .gs-imageResult a:focus.gs-title,
-.gs-imageResult a:focus.gs-title b {
+.gs-imageResult a:focus.gs-title b,
+.gs-promotion a:focus.gs-title,
+.gs-promotion a:focus.gs-title b {
     color: var(--link-color--focus) !important;
+}
+
+.gs-webResult div.gs-visibleUrl,
+.gs-promotion .gs-visibleUrl,
+.gs-promotion .gs-visibleUrl-short {
+    color: var(--gray--darker--20) !important;
+    font-size: var(--font-size--xs) !important;
+}
+
+[data-theme="dark"] .gs-webResult div.gs-visibleUrl,
+[data-theme="dark"] .gs-promotion .gs-visibleUrl,
+[data-theme="dark"] .gs-promotion .gs-visibleUrl-short {
+    color: var(--gray--lighter--40) !important;
+}
+
+.gs-promotion {
+    background-color: var(--blue--lighter--80);
+    padding: var(--space--sm);
+}
+
+[data-theme="dark"] .gs-promotion {
+    background-color: var(--blue--darker--60);
 }
 
 .gsc-control-cse .gs-spelling,
@@ -62,7 +94,7 @@ table tr {
     border: none !important;
 }
 
-input.gsc-input {    
+input.gsc-input {
     background: unset !important;
     color: unset !important;
     border: solid var(--border-width--md) var(--input-border-color) !important;
