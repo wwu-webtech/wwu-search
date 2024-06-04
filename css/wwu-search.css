@@ -71,6 +71,14 @@
     padding: var(--space--sm);
 }
 
+.gs-promotion .gs-snippet,
+.gs-promotion .gs-title .gs-promotion-title-right,
+.gs-promotion .gs-title .gs-promotion-title-right * {
+    color: var(--default-text-color);
+    font-size: unset;
+    margin: var(--space--sm) 0;
+}
+
 [data-theme="dark"] .gs-promotion {
     background-color: var(--blue--darker--60);
 }
