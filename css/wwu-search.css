@@ -74,8 +74,8 @@
 .gs-promotion .gs-snippet,
 .gs-promotion .gs-title .gs-promotion-title-right,
 .gs-promotion .gs-title .gs-promotion-title-right * {
-    color: var(--default-text-color);
-    font-size: unset;
+    color: var(--default-text-color) !important;
+    font-size: unset !important;
     margin: var(--space--sm) 0;
 }
 
